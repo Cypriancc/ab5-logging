@@ -14,17 +14,17 @@ var (
 )
 
 func Log(v any) { // blue [*]
-	fmt.Println(Reset, time.Now().Format("15:04:05"), "[", Blue, "*", Reset, "]", v)
+	fmt.Println(Reset, "[", Blue, "*", Reset, "]", v)
 }
 
 func Success(v any) { // green [/]
-	fmt.Println(Reset, time.Now().Format("15:04:05"), "[", Green, "/", Reset, "]", v)
+	fmt.Println(Reset, "[", Green, "/", Reset, "]", v)
 }
 
 func Warn(v any) { // yello [!]
-	fmt.Println(Reset, time.Now().Format("15:04:05"), "[", Yellow, "!", Reset, "]", v)
+	fmt.Println(Reset, "[", Yellow, "!", Reset, "]", v)
 }
 
 func Error(err error) { // red [X]
-	fmt.Println(Reset, time.Now().Format("15:04:05"), "[", Red, "X", Reset, "]", err)
+	fmt.Println(Reset, "[", Red, "X", Reset, "]", err)
 }
